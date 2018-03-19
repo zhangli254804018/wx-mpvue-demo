@@ -1,5 +1,5 @@
 import * as types from './mutation-types';
-import { delayBounceAction , parseUrlQuery } from '../api/filters.js';
+import { delayBounceAction, parseUrlQuery } from '../api/filters.js';
 import Vue from 'vue';
 //Vue.http.get('/someUrl', [options]).then(successCallback, errorCallback);
 //Vue.http.jsonp(url, { params: options, timeout: 1500 }).then(function(ret) {
@@ -12,15 +12,15 @@ export const currentParam = ({ commit, state }, obj, callback) => {
     }
 }
 
-export const initUserInfo =  ({ commit, state } , obj , callback) => {
-    if(!obj) obj = {}
+export const initUserInfo = ({ commit, state }, obj, callback) => {
+    if (!obj) obj = {}
     const url = state.request.PGuser
     commit(types.RC_USER_INFO)
 }
 
-export const getShareTird =  ({ commit, state } , obj , callback) => {
-    if(!obj) var obj = {}
+export const getShareTird = ({ commit, state }, obj, callback) => {
+    if (!obj) var obj = {}
     var query = parseUrlQuery()
     obj = query
-    commit(types.RC_RELAY_THIRD_PARAM,obj)
+    commit(types.RC_RELAY_THIRD_PARAM, obj)
 }
