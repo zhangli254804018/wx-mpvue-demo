@@ -1,0 +1,157 @@
+/* Basic sample */
+@import url('./_mixins.less');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "Microsoft Yahei";
+    overflow-x: hidden;
+    background-color: #fff; // width:100%;
+    // height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img table,
+tr,
+th,
+td,
+strong,
+b,
+em,
+i,
+button {
+    margin: 0;
+    padding: 0;
+    // font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border: none;
+}
+
+body {
+    // background: url('@{img-url}bg-background.jpg') repeat;
+    // background: url('@{img-url}bg-background.jpg') repeat;
+}
+
+.f7-root,
+body,
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.f7-root {
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* === Views === */
+
+.views,
+.view {
+    position: relative;
+    height: 100%;
+    z-index: 5000;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* === Pages === */
+
+.pages {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    contain: layout size style;
+}
+
+.page.stacked {
+    display: none;
+}
+
+.page-previous {
+    pointer-events: none;
+}
+
+.page-content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    contain: layout size style;
+    will-change: scroll-position;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0
+}
+
+a {
+    &:hover {
+        // .transition(100ms);
+    }
+}
