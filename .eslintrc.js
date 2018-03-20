@@ -41,7 +41,8 @@ module.exports = {
     "no-irregular-whitespace": 0,
     'no-redeclare': 0,
     'quotes':0,
-    'no-unneeded-ternary':0
+    'no-unneeded-ternary':0,
+    'semi-colon':0
   },
   globals: {
     App: true,

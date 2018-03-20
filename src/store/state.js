@@ -39,5 +39,6 @@ export default {
         'uid': 0,
         'token': '',
         'kind': ''
-    }
+    },
+    'initTird':{}
 }

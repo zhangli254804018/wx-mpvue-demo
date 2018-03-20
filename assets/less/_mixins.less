@@ -391,3 +391,21 @@
     color: @color;
     border-radius: 3px;
 }
+
+.loop(@counter) when (@counter >0) {
+    .loop((@counter - 1)); // 递归调用自身
+}
+
+.textoverflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.textoverflowTwo() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
