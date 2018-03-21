@@ -146,7 +146,7 @@ export default {
   },
   mounted() {
     wx.setNavigationBarTitle({
-      title: "ChenYanQin & ZhangLi"
+      title: "Miss Chen"
     });
     BackgroundAudioPlay();
     this.onShow();

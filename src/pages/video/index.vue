@@ -87,7 +87,7 @@ export default {
   },
   mounted() {
     wx.setNavigationBarTitle({
-      title: "播放婚纱视频"
+      title: "Miss Chen"
     });
     setTimeout(
       function() {
