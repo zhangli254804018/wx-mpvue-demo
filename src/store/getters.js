@@ -7,7 +7,10 @@ export default {
     userinfo(state,getters){
     	return state.userinfo
     },
-    shareTird(state,getters){
-    	return state.shareTird
-    }
+    initTird(state,getters){
+        return state.initTird
+    },
+    storage(state, getters) {
+        return state.storage
+	}
 }

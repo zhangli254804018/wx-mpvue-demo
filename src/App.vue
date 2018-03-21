@@ -18,7 +18,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0 5px;
   box-sizing: border-box;
   opacity: 0;
 }

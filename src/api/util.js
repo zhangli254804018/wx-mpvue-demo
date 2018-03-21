@@ -75,7 +75,7 @@ export const sharefacebook = (callback, url, picture) => {
         href: href,
         layout: 'box_count',
         mobile_iframe: true,
-        picture: picture || require('assets/img/img_share.jpg'),
+        picture: picture || '',
         // description: description,
         // title: title
     }, function(response) {
@@ -126,3 +126,15 @@ export const alertDialogCommpent = (dialogcompont,data) => {
 }
 
 
+export const BackgroundAudioPlay = (src, title, epname, singer, coverImgUrl )=>{
+    setTimeout(() => {
+        const backgroundAudioManager = wx.getBackgroundAudioManager();
+        backgroundAudioManager.title = title || "A Little Love";
+        backgroundAudioManager.epname = epname || "A Little Love";
+        backgroundAudioManager.singer = singer ||  "冯曦妤";
+        backgroundAudioManager.coverImgUrl = coverImgUrl ||
+            "https://y.gtimg.cn/music/photo_new/T002R300x300M000003JtFWs496kCE.jpg?max_age=2592000";
+        backgroundAudioManager.src = src ||
+            "http://my-wife-1252712744.cosgz.myqcloud.com/video/%E5%86%AF%E6%9B%A6%E5%A6%A4%20-%20A%20Little%20Love.mp3"; // 设置了 src 之后会自动播放
+    }, 300);
+}

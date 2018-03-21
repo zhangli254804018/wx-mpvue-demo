@@ -18,9 +18,12 @@ export const initUserInfo = ({ commit, state }, obj, callback) => {
     commit(types.RC_USER_INFO)
 }
 
-export const getShareTird = ({ commit, state }, obj, callback) => {
+export const getInitTird = ({ commit, state }, obj, callback) => {
     if (!obj) var obj = {}
-    var query = parseUrlQuery()
-    obj = query
     commit(types.RC_RELAY_THIRD_PARAM, obj)
+}
+
+export const setStorageSync = ({ commit, state }, obj, callback) => {
+    if (!obj) obj = {}
+    commit(types.RC_RELAY_SET_STORGE,obj)
 }

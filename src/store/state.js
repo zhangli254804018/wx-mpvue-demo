@@ -26,19 +26,13 @@ export default {
         "kind": 0,
         "nstat": 0
     },
-    //当前位置
-    'currents': {
-        "tab": {
-        },
-        "second": {
-        }
+    //初始化数据
+    'initTird':{
+        'backgroundAudio':'http://my-wife-1252712744.cosgz.myqcloud.com/video/3432878407.mp3',
+        'backgroundVideo':'http://my-wife-1252712744.cosgz.myqcloud.com/video/cyqzl.mp4'
     },
-    //分享第三方獲取到的數據
-    'shareTird': {
-        'type': 0,
-        'uid': 0,
-        'token': '',
-        'kind': ''
-    },
-    'initTird':{}
+    //本地缓存数据
+    'storage': {
+        'openBackgroundCover': 0  // wx.getStorageSync('openBackgroundCover')
+    }
 }

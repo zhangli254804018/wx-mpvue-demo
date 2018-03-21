@@ -27,6 +27,14 @@ module.exports = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   // devtool: '#cheap-module-eval-source-map',
   devtool: '#source-map',
+  bail: true,
+  devServer: {
+    disableHostCheck: true,
+    host: '0.0.0.0',
+    inline: true,
+    hot: true,
+    noInfo: true
+  },
   output: {
     path: config.build.assetsRoot,
     // filename: utils.assetsPath('js/[name].[chunkhash].js'),

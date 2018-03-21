@@ -67,6 +67,20 @@
     animation-name: fadeIn;
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
 @keyframes bounce {
     from,
     20%,
@@ -93,4 +107,20 @@
 .bounce {
     animation-name: bounce;
     transform-origin: center bottom;
+}
+
+@keyframes roateloop {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.roateLoop {
+    animation: roateloop 2s linear infinite;
 }

@@ -5,9 +5,9 @@
   "author": "zhangli <254804018@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
+    "dev": "rimraf dist & node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js",
+    "build": "rimraf dist & node build/build.js",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
@@ -64,6 +64,7 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-middleware-hard-disk": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
+    "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {

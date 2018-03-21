@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="card">
-      {{text}}
+        {{text}} 亲启
     </p>
   </div>
 </template>
