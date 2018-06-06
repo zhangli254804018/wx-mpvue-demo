@@ -5,8 +5,7 @@ export default {
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
-    console.log('app created and cache logs by setStorageSync')
+    // console.log('app created and cache logs by setStorageSync')
   }
 }
 </script>
